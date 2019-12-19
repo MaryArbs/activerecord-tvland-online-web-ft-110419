@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   has_many :characters
 
   def actors_list
-    self.characters do |characters|
+    self.characters.collect do |characters|
       "#{actor_id.name}"
     end
   end
