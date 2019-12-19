@@ -8,8 +8,8 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def actors_list
-    self.characters.collect do |characters|
-      characters.actor_id
+    self.actors.collect do |actors|
+      actors.full_name
 
    end
   end
