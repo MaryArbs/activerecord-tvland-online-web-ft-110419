@@ -8,6 +8,6 @@ class Show < ActiveRecord::Base
   def actors_list
     self.actors.collect do |actors|
       actors.full_name
-  end
+   end
   end
 end
