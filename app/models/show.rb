@@ -4,7 +4,7 @@ class Show < ActiveRecord::Base
   has_many :characters
 
   def actors_list
-    Show.collect do |show|
+    Show.map do |show|
       "#{actor.name}"
     end
   end
