@@ -5,16 +5,16 @@ class Show < ActiveRecord::Base
 
   def actors_list
     self.each do |show|
-      "#{character.actor_id}"
+      "#{actor_id.name}"
     end
   end
 end
 
 
-def list_roles
-  self.characters.collect do |character|
-    "#{character.name} - #{character.show.name}"
-   end.join
- end
-
- iterate through the show to get character.actor_id 
+# def list_roles
+#   self.characters.collect do |character|
+#     "#{character.name} - #{character.show.name}"
+#    end.join
+#  end
+# 
+#  iterate through the show to get character.actor_id 
