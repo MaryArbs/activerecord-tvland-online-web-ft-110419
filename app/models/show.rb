@@ -6,6 +6,7 @@ class Show < ActiveRecord::Base
   def actors_list
     self.characters.collect do |characters|
       characters.actor_id
+      actor.character_id
    end
   end
 end
