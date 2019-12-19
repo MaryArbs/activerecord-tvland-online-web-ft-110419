@@ -6,7 +6,7 @@ class Show < ActiveRecord::Base
   def actors_list
     self.characters.collect do |characters|
       characters.actor_id
-
+   end 
   end
 end
 
@@ -21,6 +21,6 @@ end
 #
 # self.characters.collect do |characters|
 #   "#{character.}"
-self.artists.collect do |t|
-   t.name
- end
+# self.artists.collect do |t|
+#    t.name
+#  end
