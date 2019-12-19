@@ -1,8 +1,6 @@
 
 class Show < ActiveRecord::Base
 
-  # belongs_to :network
-  # has_many :characters
   has_many :characters
   has_many :actors, through: :characters
   belongs_to :network
@@ -10,7 +8,6 @@ class Show < ActiveRecord::Base
   def actors_list
     self.actors.collect do |actors|
       actors.full_name
-
-   end
+  end
   end
 end
