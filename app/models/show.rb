@@ -16,5 +16,5 @@ end
 #     "#{character.name} - #{character.show.name}"
 #    end.join
 #  end
-# 
-#  iterate through the show to get character.actor_id 
+#
+#  iterate through the show to get character.actor_id
