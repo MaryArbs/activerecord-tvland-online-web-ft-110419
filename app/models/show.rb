@@ -12,17 +12,3 @@ class Show < ActiveRecord::Base
   end
 end
 
-
-# def list_roles
-#   self.characters.collect do |character|
-#     "#{character.name} - #{character.show.name}"
-#    end.join
-#  end
-#
-#  iterate through the show to get character.actor_id
-#
-# self.characters.collect do |characters|
-#   "#{character.}"
-# self.artists.collect do |t|
-#    t.name
-#  end
